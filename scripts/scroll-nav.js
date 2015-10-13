@@ -1,5 +1,7 @@
 
 
+
+
 $(window).scroll(function(){
 	if($(document).scrollTop() > 100) {
       $(".header-banner").css("display", "none");
@@ -10,6 +12,7 @@ $(window).scroll(function(){
       $(".header-nav").css("opacity", ".9");
       $(".estados-section-fixed").css("margin-top", "-40px");
       $(".arte-cultura-section-fixed").css("margin-top", "-40px");
+      $(".principal-image").css("margin-top","230px")
 
 
   }
@@ -23,7 +26,7 @@ $(window).scroll(function(){
       $(".header-nav").css("opacity", "1");
       $(".estados-section-fixed").css("margin-top", "-240px");
       $(".arte-cultura-section-fixed").css("margin-top", "-240px");
-
+       $(".principal-image").css("margin-top","0")
 
   }
  });
