@@ -1,79 +1,153 @@
-@import 'nib/vendor'
+@import 'nib'
 @import 'nib/gradients'
 
-vendor-prefixes = 0 ms moz webkit official
+azul = #1f66c8
+amarillo = #FDE962
+azulF = #013968
+azulC= #C9E4FF
+gris = #668499
+
 body
-	margin 0
-	padding 0
-	background #E5EEFB
-	font-family 'Roboto', sans-serif
-li
-	list-style none
+	background #EEE
+	font-family Verdana, Geneva, sans-serif
+	magin 0
+	
 a
 	text-decoration none
-	
-	
+ul 
+	list-style none
+
 
 header
+	background azul
+	display block
+	box-shadow 2px 2px 3px 2px rgba(0,0,0,.3)
+	z-index 1
 	
-	text-align center
-	margin-top 20px
-	
-	.header-banner
-		display block
-		img
-			width 60%
-			height 100px
-			
-			
-	.header-nav
+	section 
 		display inline-block
-		width 60%
-		background linear-gradient(right,#01A9DB, #08088A)
+		width 100%
 		
 		
-		
-		.logo-image
-			position absolute
-			vertical-align middle
-			margin-top .5%
-			margin-left .5%
-		
-			height 80px
-
-			img
-				width 60%
-				height 60px
-				vertical-align middle
-				
-				
+		.header-top
 			
-		h1
-			a
-				color #ffffff
-				font-size 25px
-
-		ul
-			
-			display block
-			li
-				display inline-block
+			width 80%
+			margin-left 10%
+			margin-right 10%
+			height 183px
+			padding-top 1%
+			.logo-section
 				
-				margin 1%
-				float right
-				a
-					color #fff
+				width auto
+			.banner-section
+				width auto
+				
+				margin-left 10%
+				img
+					width 728px
+					hight 90px
+			.bojorquez-pagina
+				text-align center
+				h1
 					
-			li:hover
+					color amarillo
+					font-size 25px
+					text-shadow -1px 1px 2px #555
+					line-height 50px
+					
+					
+		nav
+			width 100%
+			
+			text-align center
+			
+			
+			
+			ul
+				display inline-flex
+				li
+					margin-left 10px
+					padding 5px 10px
+					border-radius 7px
+					background linear-gradient(top, white, azulC)
+					
+					box-shadow 1px 1px 3px 1px rgba(0,0,0,.3)
+					a
+						color azulF
+						font-weight bold
+.estados-section, .arte-section
+	background azulC
+	margin-top 15px
+	padding 20px
+	position absolute
+	width 12%
+	height 82%
+	
+	border-radius 10px
+	
+	h2
+		text-align center
+		color azulF
+		text-shadow -1px 1px 2px #555
+		font-size 1.5em	
+	ul
+		padding 0
+		margin 0
+		height 90%
+		li
+			margin 5px 0
+			height 2.15%
+			font-family Verdana
+		
+			a
+				color gris
+				font-size 13px
 				
+			a:hover
+				color azulF
+				font-size 15px
+				font-weight 600
+.estados-section
+	
+	margin-left 1%
+	box-shadow 3px 3px 8px 3px rgba(0,0,0,.3)
 
-				a
-					color #A9F5F2	
+.arte-section
+	margin-left 84.5%
+	margin-right .4%
+	box-shadow -3px 3px 8px 3px rgba(0,0,0,.3)
+	
+
+	input
+		background azulF
+		border-radius 8px
+		padding 10px
+		border 1px solid #000
+		width 90%
+	span
+		color azulC
+		position absolute
+		margin-top -28px
+		margin-left 180px
+		
+	.banner-li
+		height 60%					
+		.banner-arte
+			text-align center
+			margin-top 10px
+			padding-top 10px
+			border-top 1px solid gris
+			height 90%
+			img 
+				height 100%
+				width 100%
+					
+
 .info-section
-	width 60%
-	background #E0EEFB
+	width 64%
+	
 	text-align center
-	margin-left 20%
+	margin-left 18%
 	margin-top 30px
 	padding-top 1%
 	
@@ -85,7 +159,7 @@ header
 	
 	.principal-image
 		img
-			width 90%
+			width 100%
 			height 200px
 			margin-bottom 40px
 		span
@@ -105,21 +179,12 @@ header
 		height 100%
 		margin-top -5px
 		padding 10px
-		vertical-align middle
+		
+		
 		
 		iframe
 			margin-bottom 10px
-		.video-mas
-			height 150px
-			width 80%
-			background #B3B3B3
-			margin-left 10%
-			
-			a
-				margin-top 100px
-			span
-				margin-top 50px
-				
+			float left
 		
 			
 
@@ -128,17 +193,16 @@ header
 		
 	.info-section-el
 		text-align right
-		width 70%
-		margin-left 30%
-		background #fff
+		width 75%
+		margin-left 25%
+		
 		.info-section-elements
 			text-align left
 			width 30%
 			height 450px
 			display inline-block
 			padding .5%
-			border-bottom 1px solid #E7ECF8
-			border-right 1px solid #E7ECF8
+			
 			
 			img
 			
@@ -146,6 +210,7 @@ header
 				height 150px
 				margin-bottom 30px
 			h4
+				text-align center
 				a
 					color #007C92
 					font-size 15px
@@ -173,129 +238,64 @@ header
 				width 100%
 				height 155px
 				opacity .6
-			
-				
-				
-
-				
-.estados-section-fixed
-	position fixed
-	width 17%
-	height 100%
-	margin .5%
-	padding 1%
-	margin-top -240px
-	h2
-		background linear-gradient(right,#01A9DB, #A9F5F2)
-		color #002664
-		font-size 23px
-		padding 5%
-		
-	
-	ul
-		height 80%
-		position fixed
-		margin-left -2vw
-		margin-top -.8%
-		
-		li
-			height 3.4%
-			a
-				color #007C92
-		li:hover
-			a
-				color #002664
-				font-size 17px
-
-.arte-cultura-section-fixed
-	position fixed
-	width 17%
-	height 100%
-	margin .5% .5% .5% 80%
-	padding 1%
-	margin-top -240px
-	
-	
-	h2
-		background linear-gradient(right,#A9F5F2, #01A9DB)
-		color #002664
-		font-size 23px
-		padding 5%
-	input
-		border 2px solid #01A9DB
-		padding 5px
-		width 80%
-		background #E5EEFB
-	.icon-search-section
-		position absolute
-		margin-top -24px
-		margin-left 68%
-		font-size 20px	
-		.icon-search
-			color #002664
-		
-	
-	ul
-		height 80%
-		position fixed
-		margin-left -2vw
-		
-		li
-			height 7%
-			a
-				color #007C92
-		li:hover
-			a
-				color #002664
-				font-size 17px
-			
-			
-
 footer
 	
 	text-align left
 	margin-top 20px
-	width 60%
-	margin-left 20%
+	width 100%
+	
+	text-align center
+	background azul
+	padding 10px
 	padding-bottom 5%
+	
 	h3
-		color #002664
+		font-size 20px
+		color white
+		text-shadow -1px 1px 2px black
+		text-align left
+		margin-left 20%
 	ul
-		
 		display block
+		text-align center
+		width 100%
+		
 		li
 			display inline-block
-			margin-right .7%
-			border-radius 50px
-			padding 3px 10px 3px 10px
-			background #E6E6E6
-			border 2px solid #BDBDBD
+			margin 8px 0 8px 15px
+			padding-right 20px
 			a
-				color #6E6E6E
-				font-size 15px
-		li:hover
-			background #BDBDBD
-
-	p
-		color #007C92
-	span 
-		color #007C92
-		float right
-		margin-top 20px
-		font-size 12px
-		a
-			color #48A4FF
-			font-weight 900
-		a:hover
-			color #0431B4		
+				color amarillo
+				font-weight bold
+				font-style normal
+			a:hover
+				color white
 	
-
-
-
-
-
-				
-				
+	.parrafo-footer
+		text-align center
+		width 60%
+		margin-left 20%
 	
-	
+		p
+			font-size 12px
+			color white
+			font-style italic
+		span
+			font-size 12px
+			color white
+			float right
+			a
+				font-size 14px
+				color amarillo
+				font-weight bold
+			a:hover
+				color white
+
+
+
+
+
+
+
+
 	

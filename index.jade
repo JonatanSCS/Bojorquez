@@ -1,50 +1,46 @@
 doctype html
-
 html
 	head
 		title
-		meta(charset="utf-8")
-		//meta(http-equiv="refresh", content="2")
+		link(rel="stylesheet", href="css/normalize.css")
 		link(rel="stylesheet", href="css/style.css")
 		link(rel="stylesheet", href="css/font-style.css")
-		link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Rock+Salt|Asap|Roboto", type="text/css")
+		meta(charset="utf-8")
+		meta(name="viewport", content="width=device-width, initial-scale=1.0")
 
 	body
 		header
-			section(class="header-banner")
-				img(src="img/banner-publi.jpg", alt="Banner Publicitario")
-
-			section(class="header-nav")
-				section(class="logo-image")
-					a(href="")
-						img(src="img/guia-turistica-big.jpg", alt="")
-				section(class="navigation-bar")
-					nav
-						h1 
-							a(href="") ViajesBojorquez.com.mx
-						ul
-							li
-								a(href="")
-									section(class="")
-							li
-								a(href="") Traza tu ruta 
-							li
-								a(href="") Visas y embajadas 
-							li
-								a(href="") Claves Lada
-							li
-								a(href="") Códigos Postales
-							li
-								a(href="") Mapas
-							li
-								a(href="") Arte y Cultura
-							li
-								a(href="") Estados
-
-		section(class="estados-section-fixed")
-			h2 Estados
 			section
-				ul
+				section.header-top
+					section.logo-section
+						img.logo-image(src="img/guia-turistica-big.png", alt="Imagen-Logo")
+					section.banner-section
+						img(src="img/banner-publi.jpg", alt="Banner-Publicitario")
+					section.bojorquez-pagina
+						h1 ViajesBojorquez.com.mx
+				
+				nav
+					ul
+						li
+							a(href="")
+								span.icon-home3
+						li
+							a(href="") Estados
+						li
+							a(href="") Arte y Cultura
+						li
+							a(href="") Claves Lada
+						li
+							a(href="") Códigos Postales
+						li
+							a(href="") Mapas
+						li
+							a(href="") Traza tu ruta
+						li
+							a(href="") Visas y embajadas
+		section.estados-section
+			h2 Estados
+			ul
 					li
 						a(href="") Aguascalientes
 					li
@@ -109,13 +105,12 @@ html
 						a(href="") Yucatán
 					li
 						a(href="") Zacatecas
-					
-		section(class="arte-cultura-section-fixed")
-			h2 Arte y Cultura
-			section
+
+		section.arte-section
+			section.buscador-section
 				input(type="text" placeholder="Buscar")
-				section(class="icon-search-section")
-					span(class="icon-search")
+				span.icon-search
+			h2 Arte y Cultura
 			ul
 				li
 					a(href="") Destinos
@@ -137,8 +132,11 @@ html
 					a(href="") Naturaleza
 				li
 					a(href="") Videos
+				li.banner-li
+					section.banner-arte
+						img(src="img/banner-arte.jpg", alt="Banner-Publicitario")
 
-
+			
 
 		section(class="info-section")
 			section(class="principal-image")
@@ -174,61 +172,61 @@ html
 						a(href="") Manuel Felgueréz
 					img(src="img/GT-1.jpg", alt="")
 					p Manuel Felguérez nació el 12 de Diciembre de 1928 en el seno de una familia aristocrática. Fue hijo primogénito de un terrateniente de Zacatecas.
-						a(href="", class="ver-más-link")  Conócelo más...
+						a(href="", class="ver-más-link")  Personajes...
 				section(class="info-section-elements")
 					h4
-						a(href="") Feria del Globo, Milpa Alta
+						a(href="") Feria del Globo
 					img(src="img/GT-2.jpg", alt="")
 					p En este bello lugar se le da una connotación muy especial a la fiesta de difuntos: la elevación de globos y faroles de papel de china. 
-						a(href="", class="ver-más-link")  Ver más...
+						a(href="", class="ver-más-link")  Festivales...
 
 				section(class="info-section-elements")
 					h4
 						a(href="") Cuajilote
 					img(src="img/GT-3.jpg", alt="")
 					p Esta región fue receptora y redistribuidora comercial, aprovechando la red de comunicaciones demarcada por la fisiografía. 
-						a(href="", class="ver-más-link")  Descubre más..
+						a(href="", class="ver-más-link")  Zonas Arqueológicas..
 
 				section(class="info-section-elements")
 					h4
 						a(href="") Marimba chiapaneca
 					img(src="img/GT-4.jpg", alt="")
 					p La marimba tradicional mexicana proviene de Tabasco, Chiapas y Guatemala, y tiene su origen en instrumentos que introdujeron los esclavos negros en la época de la conquista.
-						a(href="", class="ver-más-link")  Conócelo más...
+						a(href="", class="ver-más-link")  Cultura Nacional...
 				section(class="info-section-elements")
 					h4
 						a(href="") Barrancas del Cobre
 					img(src="img/GT-5.jpg", alt="")
 					p Sobre una extensión de 600 km de longitud y 250 km de anchura se extienden las majestuosas Barrancas del Cobre, parque natural ubicado dentro del estado de Chihuahua.
-						a(href="", class="ver-más-link")  Ver más...
+						a(href="", class="ver-más-link")  Destinos...
 				
 				section(class="info-section-elements")
 					h4
 						a(href="") Isla Mujeres
 					img(src="img/GT-6.jpg", alt="")
 					p Las primeras noticias de Isla Mujeres datan del periodo comprendido entre el 564 y el 1516 dC, y la ubican como una provincia maya de Ekab.
-						a(href="", class="ver-más-link")  Descubre más..
+						a(href="", class="ver-más-link")  Destinos..
 
 				section(class="info-section-elements")
 					h4
 						a(href="") Ixtapa Zihuatanejo
 					img(src="img/GT-7.jpg", alt="")
 					p La palabra Zihuatanejo, una tiene origen en los vocablos en purépechas itzi: agua, huata: cerro y nejo: amarillo verdoso, que en conjunto se expresa como "Agua del cerro amarillo".
-						a(href="", class="ver-más-link")  Conócelo más...
+						a(href="", class="ver-más-link")  Destinos...
 
 				section(class="info-section-elements")
 					h4
 						a(href="") La casa de los azulejos
 					img(src="img/GT-8.jpg", alt="")
 					p La Casa de los Azulejos es un palacio ubicado en el centro histórico de la Ciudad de México (entre las Calle Francisco I. Madero y la Calle Cinco de Mayo).
-						a(href="", class="ver-más-link")  Ver más...
+						a(href="", class="ver-más-link")  Cultura Nacional...
 
 				section(class="info-section-elements")
 					h4
 						a(href="") Tajín
 					img(src="img/GT-9.jpg", alt="")
 					p La antigua ciudad de El Tajín se desarrolló a fines del horizonte Clásico, y llegó a su apogeo en la transición al Posclásico, o sea entre 800 y 1150.
-						a(href="", class="ver-más-link")  Descubre más...
+						a(href="", class="ver-más-link")  Zonas Arqueológicas...
 
 		footer
 			h3 Acerca de nosotros
@@ -241,14 +239,17 @@ html
 					a(href="") Términos de Uso
 				li
 					a(href="") Políticas de privacidad
-			p Copyright Guía Turística México © 2015. Todos los derechos reservados. Prohibida la reproducción parcial o total sin previa autorización expresa y por escrito de Directorios y Guías VB SA de CV. Génova 20-5, colonia Juárez, C.P. 06600, México D.F.
-			span Desarrollado por 
-				a(href="") Meinen.mx
+			section.parrafo-footer
+				p Copyright Guía Turística México © 2015. Todos los derechos reservados. Prohibida la reproducción parcial o total sin previa autorización expresa y por escrito de Directorios y Guías VB SA de CV. Génova 20-5, colonia Juárez, C.P. 06600, México D.F.
+				span Desarrollado por 
+					a(href="") Meinen.mx
 
-	
+
 	script(src="scripts/jquery.js")
+	script(src="scripts/jquery-changes.js")
 
-	script(src="scripts/scroll-nav.js")
+
+
 
 
 
