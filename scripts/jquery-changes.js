@@ -1,5 +1,5 @@
 $(window).scroll(function(){
-	if($(document).scrollTop() > 186) {
+	if($(document).scrollTop() > 132) {
     	$(".header-top").css("display", "none");
     	$("header").css("position", "fixed");
     	$("header").css("width","100%");
@@ -9,12 +9,12 @@ $(window).scroll(function(){
     	$(".arte-section").css("position", "fixed");
     	$(".estados-section").css("margin-top", "45px");
     	$(".arte-section").css("margin-top", "45px");
-        $(".principal-image").css("margin-top", "248px");
+        $(".principal-image").css("margin-top", "190px");
 
   }
  });
 $(window).scroll(function(){
-	if($(document).scrollTop() < 186) {
+	if($(document).scrollTop() < 132) {
 		$(".header-top").css("display", "block");
    		$("header").css("position", "relative");
     	$("header").css("width","100%");
