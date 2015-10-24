@@ -10,6 +10,9 @@ $(window).scroll(function(){
     	$(".estados-section").css("margin-top", "45px");
     	$(".arte-section").css("margin-top", "45px");
         $(".principal-image").css("margin-top", "190px");
+        $(".imagen-estado").css("margin-top", "190px");
+
+        
 
   }
  });
@@ -25,9 +28,16 @@ $(window).scroll(function(){
     	$(".estados-section").css("margin-top", "15px");
     	$(".arte-section").css("margin-top", "15px");
         $(".principal-image").css("margin-top", "0");
-    	
+        $(".imagen-estado").css("margin-top", "0");
 
   }
  });
 
+
+var municipio;
+
+$(".municipios-tlaxcala").click(function(){
+    municipio = $(this).attr("id");
+
+});
 
