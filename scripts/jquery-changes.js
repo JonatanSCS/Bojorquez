@@ -34,10 +34,20 @@ $(window).scroll(function(){
  });
 
 
+
 var municipio;
-
 $(".municipios-tlaxcala").click(function(){
-    municipio = $(this).attr("id");
-
+    municipio = $(this).text();
+    $.cookie("municipio-nombre", municipio); 
 });
+
+$(document).ready(function(){
+        $(".titulo-municipio").text($.cookie("municipio-nombre"));
+});
+
+$(".municipios-regreso").click(function(){
+    window.history.back();
+});
+
+
 
