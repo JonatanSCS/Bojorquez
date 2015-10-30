@@ -7,8 +7,8 @@ $(window).scroll(function(){
     	$("nav").css("margin-top","0");
     	$(".estados-section").css("position", "fixed");
     	$(".arte-section").css("position", "fixed");
-    	$(".estados-section").css("margin-top", "45px");
-    	$(".arte-section").css("margin-top", "45px");
+    	$(".estados-section").css("margin-top", "55px");
+    	$(".arte-section").css("margin-top", "55px");
         $(".principal-image").css("margin-top", "190px");
         $(".imagen-estado").css("margin-top", "190px");
 
