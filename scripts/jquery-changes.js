@@ -1,6 +1,7 @@
 $(window).scroll(function(){
-	if($(document).scrollTop() > 132) {
+	if($(document).scrollTop() > 182) {
     	$(".header-top").css("display", "none");
+        $(".viajes-bojorquez-link").css("display", "none");
     	$("header").css("position", "fixed");
     	$("header").css("width","100%");
     	$("header").css("margin-top", "-30px");
@@ -9,16 +10,17 @@ $(window).scroll(function(){
     	$(".arte-section").css("position", "fixed");
     	$(".estados-section").css("margin-top", "55px");
     	$(".arte-section").css("margin-top", "55px");
-        $(".principal-image").css("margin-top", "190px");
-        $(".imagen-estado").css("margin-top", "190px");
+        $(".principal-image").css("margin-top", "250px");
+        $(".imagen-estado").css("margin-top", "250px");
 
         
 
   }
  });
 $(window).scroll(function(){
-	if($(document).scrollTop() < 132) {
+	if($(document).scrollTop() < 182) {
 		$(".header-top").css("display", "block");
+        $(".viajes-bojorquez-link").css("display", "block");
    		$("header").css("position", "relative");
     	$("header").css("width","100%");
     	$("nav").css("margin-top","1%");
