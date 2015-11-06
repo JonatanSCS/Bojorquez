@@ -1,36 +1,34 @@
 $(window).scroll(function(){
-	if($(document).scrollTop() > 182) {
+	if($(document).scrollTop() > 163) {
     	$(".header-top").css("display", "none");
         $(".viajes-bojorquez-link").css("display", "none");
     	$("header").css("position", "fixed");
-    	$("header").css("width","100%");
     	$("header").css("margin-top", "-30px");
-    	$("nav").css("margin-top","0");
     	$(".estados-section").css("position", "fixed");
     	$(".arte-section").css("position", "fixed");
-    	$(".estados-section").css("margin-top", "55px");
-    	$(".arte-section").css("margin-top", "55px");
-        $(".principal-image").css("margin-top", "250px");
-        $(".imagen-estado").css("margin-top", "250px");
+    	$(".estados-section").css("margin-top", "33px");
+    	$(".arte-section").css("margin-top", "33px");
+        $(".principal-image").css("margin-top", "227px");
+        $(".imagen-estado").css("margin-top", "227px");
+        $(".municipio-info-tabla").css("margin-top", "227px")
 
         
 
   }
  });
 $(window).scroll(function(){
-	if($(document).scrollTop() < 182) {
-		$(".header-top").css("display", "block");
+	if($(document).scrollTop() < 163) {
+        $(".header-top").css("display", "block");
         $(".viajes-bojorquez-link").css("display", "block");
-   		$("header").css("position", "relative");
-    	$("header").css("width","100%");
-    	$("nav").css("margin-top","1%");
-    	$(".logo-section").css("margin-top", "20px");
-    	$(".estados-section").css("position", "absolute");
-    	$(".arte-section").css("position", "absolute");
-    	$(".estados-section").css("margin-top", "15px");
-    	$(".arte-section").css("margin-top", "15px");
-        $(".principal-image").css("margin-top", "0");
-        $(".imagen-estado").css("margin-top", "0");
+        $("header").css("position", "relative");
+        $("header").css("margin-top", "0");
+        $(".estados-section").css("position", "absolute");
+        $(".arte-section").css("position", "absolute");
+        $(".estados-section").css("margin-top", "5px");
+        $(".arte-section").css("margin-top", "5px");
+        $(".principal-image").css("margin-top", "0px");
+        $(".imagen-estado").css("margin-top", "0px");
+        $(".municipio-info-tabla").css("margin-top", "0px")
 
   }
  });
