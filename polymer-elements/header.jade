@@ -1,0 +1,32 @@
+link(rel="import", href="../bower_components/polymer/polymer.html")
+link(rel="stylesheet", href="../css/style.css")
+dom-module(id="header-polymer")
+	template
+		header
+			section
+				section.header-top
+					section.logo-section
+						img.logo-image(src="../img/guia-turistica-big.png", alt="Imagen-Logo")
+					section.banner-section
+						img(src="../img/banner-publi.jpg", alt="Banner-Publicitario")
+				section.viajes-bojorquez-link
+					a(href="http://www.viajesbojorquez.com.mx/") www.ViajesBojorquez.com.mx	
+				nav
+					ul
+						input(type="text", placeholder="Buscar")
+						span.icon-search
+						li.first-li-nav
+							a(href="../index.html")
+								span.icon-home3
+						li
+							a(href="") Claves Lada
+						li
+							a(href="") Códigos Postales
+						li
+							a(href="") Mapas
+						li
+							a(href="") Traza tu ruta
+						li.last-li-nav
+							a(href="") Visas y embajadas
+	script.
+		Polymer({ is: "header-polymer" });

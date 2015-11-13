@@ -26,8 +26,10 @@ module.exports = function(grunt) {
           'html/municipios.html':'html/municipios.jade',
           'html/municipio-Tlax.html':'html/municipio-Tlax.jade',
           'html/tlaxcala.html':'html/tlaxcala.jade',
-          'html/videos.html':'html/videos.jade'
-
+          'html/videos.html':'html/videos.jade',
+          'polymer-elements/header.html': 'polymer-elements/header.jade',
+          'polymer-elements/estados.html': 'polymer-elements/estados.jade',
+          'polymer-elements/arte-cultura.html': 'polymer-elements/arte-cultura.jade'
         }
 
       } 
@@ -62,7 +64,12 @@ module.exports = function(grunt) {
                         'html/municipios.jade',
                         'html/municipio-Tlax.jade',
                         'html/tlaxcala.jade',
-                        'html/videos.jade'],
+                        'html/videos.jade',
+                        'polymer-elements/header.jade',
+                        'polymer-elements/estados.jade',
+                        'polymer-elements/arte-cultura.jade'
+                        ],
+
 
                 tasks: ['stylus','jade'],
                 options: {

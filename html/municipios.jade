@@ -5,104 +5,15 @@ html
 		link(rel="stylesheet", href="../css/normalize.css")
 		link(rel="stylesheet", href="../css/style.css")
 		link(rel="stylesheet", href="../css/font-style.css")
+		link(rel="import", href="../polymer-elements/header.html")
+		link(rel="import", href="../polymer-elements/estados.html")
+		script(src="../bower_components/webcomponentsjs/webcomponents-lite.min.js")
 		meta(charset="utf-8")
 		meta(name="viewport", content="width=device-width, initial-scale=1.0")
 
 	body
-		header
-			section
-				section.header-top
-					section.logo-section
-						img.logo-image(src="../img/guia-turistica-big.png", alt="Imagen-Logo")
-					section.banner-section
-						img(src="../img/banner-publi.jpg", alt="Banner-Publicitario")
-				section.viajes-bojorquez-link
-					a(href="http://www.viajesbojorquez.com.mx/") www.ViajesBojorquez.com.mx	
-				nav
-					ul
-						input(type="text", placeholder="Buscar")
-						span.icon-search
-						li.first-li-nav
-							a(href="../index.html")
-								span.icon-home3
-						li
-							a(href="") Claves Lada
-						li
-							a(href="") Códigos Postales
-						li
-							a(href="") Mapas
-						li
-							a(href="") Traza tu ruta
-						li.last-li-nav
-							a(href="") Visas y embajadas
-						
-		section.estados-section
-			h2 Estados
-			ul
-					li
-						a(href="") Aguascalientes
-					li
-						a(href="") Baja California
-					li
-						a(href="") Baja California Sur
-					li
-						a(href="") Campeche
-					li
-						a(href="") Chiapas
-					li
-						a(href="") Chihuahua
-					li
-						a(href="") Coahuila
-					li
-						a(href="") Colima
-					li
-						a(href="") Distrito Federal
-					li
-						a(href="") Durango
-					li
-						a(href="") Estado de México
-					li
-						a(href="") Guanajuato
-					li
-						a(href="") Guerrero
-					li
-						a(href="") Hidalgo
-					li
-						a(href="") Jalisco
-					li
-						a(href="") Michoacán
-					li
-						a(href="") Morelos
-					li
-						a(href="") Nayarit
-					li
-						a(href="") Nuevo León
-					li
-						a(href="") Oaxaca
-					li
-						a(href="") Puebla
-					li
-						a(href="") Querétaro
-					li
-						a(href="") Quintana Roo
-					li
-						a(href="") San Luis Potosí
-					li
-						a(href="") Sinaloa
-					li
-						a(href="") Sonora
-					li
-						a(href="") Tabasco
-					li
-						a(href="") Tamaulipas
-					li
-						a(href="tlaxcala.html") Tlaxcala
-					li
-						a(href="") Veracruz
-					li
-						a(href="") Yucatán
-					li
-						a(href="") Zacatecas
+		header-polymer
+		estados-polymer
 
 		section.arte-section
 			h2 Arte y Cultura

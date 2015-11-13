@@ -1,0 +1,21 @@
+{
+  "name": "Bojorquez",
+  "description": "Uso de Polymer para header y secciones laterales y evirtar repetir elementos",
+  "main": "index.html",
+  "authors": [
+    "Jonatan Santa Cruz"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/JonatanSCS/Bojorquez",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#^1.2.0"
+  }
+}
