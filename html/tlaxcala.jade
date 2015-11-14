@@ -7,6 +7,7 @@ html
 		link(rel="stylesheet", href="../css/font-style.css")
 		link(rel="import", href="../polymer-elements/header.html")
 		link(rel="import", href="../polymer-elements/estados.html")
+		link(rel="import", href="../polymer-elements/arte-cultura.html")
 		script(src="../bower_components/webcomponentsjs/webcomponents-lite.min.js")
 		meta(charset="utf-8")
 		meta(name="viewport", content="width=device-width, initial-scale=1.0")
@@ -14,34 +15,7 @@ html
 	body
 		header-polymer
 		estados-polymer
-
-		section.arte-section
-			h2 Arte y Cultura
-			ul
-				li
-					a(href="") Destinos
-				li
-					a(href="") Historia
-				li
-					a(href="") Personajes
-				li
-					a(href="") Leyendas
-				li
-					a(href="") Gastronomía
-				li
-					a(href="") Festivales
-				li
-					a(href="") Zonas Arqueológicas
-				li
-					a(href="") Cultura Nacional
-				li
-					a(href="") Naturaleza
-				li
-					a(href="videos.html") Videos
-				li.banner-li
-					section.banner-arte
-						img(src="../img/banner-arte.jpg", alt="Banner-Publicitario")
-
+		ac-polymer
 			
 
 		section(class="estado-info-section")
@@ -76,7 +50,7 @@ html
 				img(src="../img/tla.jpg", alt="")
 
 				table(width="300px", cellpadding="0", cellspacing="5")
-					tbody							
+					tbody
 						tr.tabla-titulo
 							td Municipio
 							td
