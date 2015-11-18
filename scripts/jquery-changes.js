@@ -1,3 +1,24 @@
+
+
+
+
+$("header-min-polymer").css("display", "none");
+
+var tamaño_pantalla = $(window).width();
+
+if(tamaño_pantalla <= 1200){
+    $("header-polymer").css("display", "none");
+    $("header-min-polymer").css("display", "block");
+
+    
+}
+else{
+    $("header-min-polymer").css("display", "none");
+    $("header-polymer").css("display", "block");
+}
+
+
+
 $(window).scroll(function(){
 	if($(document).scrollTop() > 100) {
         $('header').css('position', 'fixed');
@@ -33,11 +54,6 @@ $(window).scroll(function(){
 
   }
  });
-
-
-
-
-
 var municipio;
 $(".municipios-tlaxcala").click(function(){
     municipio = $(this).text();
@@ -53,6 +69,36 @@ $(document).ready(function(){
 $(".municipios-regreso").click(function(){
     window.history.back();
 });
+
+$(window).on("resize", methodToFixLayout);
+
+function methodToFixLayout( e ) {
+    var winHeight = $(window).height();
+    var winWidth = $(window).width();
+
+
+var tamaño_pantalla = $(window).width();
+
+if(tamaño_pantalla <= 1200){
+    $("header-polymer").css("display", "none");
+    $("header-min-polymer").css("display", "block");
+
+    
+}
+else{
+    $("header-min-polymer").css("display", "none");
+    $("header-polymer").css("display", "block");
+}
+    
+}
+
+
+
+
+
+
+
+
 
 
 

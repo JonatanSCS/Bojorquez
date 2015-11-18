@@ -29,9 +29,9 @@ module.exports = function(grunt) {
           'html/videos.html':'html/videos.jade',
           'polymer-elements/header.html': 'polymer-elements/header.jade',
           'polymer-elements/estados.html': 'polymer-elements/estados.jade',
-          'polymer-elements/arte-cultura.html': 'polymer-elements/arte-cultura.jade'
+          'polymer-elements/arte-cultura.html': 'polymer-elements/arte-cultura.jade',
+          'polymer-elements/header-min.html': 'polymer-elements/header-min.jade'
         }
-
       } 
     },
 
@@ -67,7 +67,8 @@ module.exports = function(grunt) {
                         'html/videos.jade',
                         'polymer-elements/header.jade',
                         'polymer-elements/estados.jade',
-                        'polymer-elements/arte-cultura.jade'
+                        'polymer-elements/arte-cultura.jade',
+                        'polymer-elements/header-min.jade'
                         ],
 
 
@@ -85,7 +86,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-stylus');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-connect');
-
 
   grunt.registerTask('default', ['uglify', 'jade', 'stylus', 'watch']);
   grunt.registerTask('server', ['connect:server']);

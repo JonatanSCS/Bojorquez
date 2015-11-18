@@ -1,22 +1,25 @@
 link(rel="import", href="../bower_components/polymer/polymer.html")
 link(rel="stylesheet", href="../css/style.css")
-dom-module(id="header-polymer")
+dom-module(id="header-min-polymer")
 	template
-		header
-			div.guia-turistica-logo
-				a(href="../index.html")
-					img.logo-image(src="../img/guia-turistica-big.png", alt="Imagen-Logo")
-			div.header-centro
-				div.banner
+		header.header-min
+
+			div.div-top
+				div.div-logo
+					a(href="../index.html")
+						img.logo-image(src="../img/guia-turistica-big.png", alt="Imagen-Logo")
+				div.div-banner
 					img(src="../img/banner-publi.jpg", alt="Banner-Publicitario")
-				div.navegador
+
+			div.div-bottom
+				div.div-nav
 					nav
 						ul.nav-ul
 							li.first-li-nav
 								a(href="../index.html")
 									span.icon-home3
 							li
-								a(href="") Claves LADA
+								a(href="") Hola como estas
 							li
 								a(href="") Códigos Postales
 							li
@@ -27,10 +30,9 @@ dom-module(id="header-polymer")
 								a(href="") Visas y embajadas
 							li.last-li-nav
 								input(type="text", placeholder="Buscar")
-								span.icon-search
+									span.icon-search
+				div.div-link
+					a(href="") www.ViajesBojorquez.com
 
-			div.viajes-logo
-				img(src="../img/viajes-b.png", alt="")
-					
 	script.
-		Polymer({ is: "header-polymer" });
+		Polymer({ is: "header-min-polymer" });
