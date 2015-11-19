@@ -30,7 +30,8 @@ module.exports = function(grunt) {
           'polymer-elements/header.html': 'polymer-elements/header.jade',
           'polymer-elements/estados.html': 'polymer-elements/estados.jade',
           'polymer-elements/arte-cultura.html': 'polymer-elements/arte-cultura.jade',
-          'polymer-elements/header-min.html': 'polymer-elements/header-min.jade'
+          'polymer-elements/header-min.html': 'polymer-elements/header-min.jade',
+          'polymer-elements/tabla-estado.html': 'polymer-elements/tabla-estado.jade'
         }
       } 
     },
@@ -68,7 +69,9 @@ module.exports = function(grunt) {
                         'polymer-elements/header.jade',
                         'polymer-elements/estados.jade',
                         'polymer-elements/arte-cultura.jade',
-                        'polymer-elements/header-min.jade'
+                        'polymer-elements/header-min.jade',
+                        'polymer-elements/tabla-estado.jade'
+
                         ],
 
 
