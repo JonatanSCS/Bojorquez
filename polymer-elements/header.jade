@@ -2,7 +2,7 @@ link(rel="import", href="../bower_components/polymer/polymer.html")
 link(rel="stylesheet", href="../css/style.css")
 dom-module(id="header-polymer")
 	template
-		header
+		header.header-max
 			div.guia-turistica-logo
 				a(href="../index.html")
 					img.logo-image(src="../img/guia-turistica-big.png", alt="Imagen-Logo")
@@ -30,7 +30,7 @@ dom-module(id="header-polymer")
 								span.icon-search
 
 			div.viajes-logo
-				img(src="../img/viajes-b.png", alt="")
+				img(src="../img/plus.png", alt="")
 					
 	script.
 		Polymer({ is: "header-polymer" });

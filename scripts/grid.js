@@ -27,7 +27,8 @@ function renderGrid(){
     }
 
 
-$("#grid_container").css("height", cuenta + 150);
+var tamano_pantalla = $(window).width();
+$("#grid_container").css("height", cuenta + (tamano_pantalla)*.15 );
 
 
 }

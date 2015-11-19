@@ -1,19 +1,16 @@
-$("header-min-polymer").css("display", "none");
-var tamaño_pantalla = $(window).width();
 
+var tamano_pantalla = $(window).width();
 
-if(tamaño_pantalla <= 1200){
-    $("header-polymer").css("display", "none");
-    $("header-min-polymer").css("display", "block");
-
+    if(tamano_pantalla <= 1200){
+        $("header-polymer").css("display", "none");
+        $(".header-min").css("display", "block");
     
-}
-else{
-    $("header-min-polymer").css("display", "none");
-    $("header-polymer").css("display", "block");
-}
-
-
+    }
+    else{
+        $("header-polymer").css("display", "block");
+        $(".header-min").css("display", "none");
+    
+    }    
 
 $(window).scroll(function(){
 	if($(document).scrollTop() > 100) {
@@ -30,8 +27,11 @@ $(window).scroll(function(){
         $('.estados-section').css('position', 'fixed');
         $('.imagen-estado').css('margin-top', '145px');
         $('.municipio-info-tabla').css('margin-top', '145px');
-  }
- });
+        $('.div-top').css('display', 'none');
+        $('.div-bottom').css('margin-top', '10px'); 
+
+    }
+});
 $(window).scroll(function(){
 	if($(document).scrollTop() < 100) {
         $('header').css('position', 'relative');
@@ -47,48 +47,67 @@ $(window).scroll(function(){
         $('.estados-section').css('position', 'absolute');
         $('.imagen-estado').css('margin-top', '0');
         $('.municipio-info-tabla').css('margin-top', '0');
+        $('.div-top').css('display', 'block');
+        $('.div-bottom').css('margin-top', '-30px'); 
+          
+    }
+});
 
-  }
- });
+
+
+
+
+
+
+//Eliminar este codigo en producción
 var municipio;
 $(".municipios-tlaxcala").click(function(){
     municipio = $(this).text();
     $.cookie("municipio-nombre", municipio); 
-
 });
+
+
+
+
+//Elegir Header dependiendo de la pantalla
 
 $(document).ready(function(){
-        $(".titulo-municipio").text($.cookie("municipio-nombre"));
-        //$(".info-section-element").css("box-shadow", "1px 1px 3px 1px rgba(0,0,0,.3)");
-
-
-        
+    $(".titulo-municipio").text($.cookie("municipio-nombre"));
+    
+    if(tamano_pantalla <= 1200){
+        $("header-polymer").css("display", "none");
+        $(".header-min").css("display", "block");
+    }
+    else{
+        $("header-polymer").css("display", "block");
+        $(".header-min").css("display", "none");
+    }    
 });
+
+
+
+
 
 $(".municipios-regreso").click(function(){
     window.history.back();
 });
 
+
+
+
 $(window).on("resize", methodToFixLayout);
 
 function methodToFixLayout( e ) {
-    var winHeight = $(window).height();
-    var winWidth = $(window).width();
+    var tamano_pantalla = $(window).width();
 
-
-var tamaño_pantalla = $(window).width();
-
-if(tamaño_pantalla <= 1200){
-    $("header-polymer").css("display", "none");
-    $("header-min-polymer").css("display", "block");
-
-    
-}
-else{
-    $("header-min-polymer").css("display", "none");
-    $("header-polymer").css("display", "block");
-}
-    
+    if(tamano_pantalla <= 1200){
+        $("header-polymer").css("display", "none");
+        $(".header-min").css("display", "block");
+    }
+    else{
+        $(".header-min").css("display", "none");
+        $("header-polymer").css("display", "block");
+    } 
 }
 
 
