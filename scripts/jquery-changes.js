@@ -1,10 +1,6 @@
-
-
-
-
 $("header-min-polymer").css("display", "none");
-
 var tamaño_pantalla = $(window).width();
+
 
 if(tamaño_pantalla <= 1200){
     $("header-polymer").css("display", "none");
