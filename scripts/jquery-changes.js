@@ -59,6 +59,9 @@ $(".municipios-tlaxcala").click(function(){
 
 $(document).ready(function(){
         $(".titulo-municipio").text($.cookie("municipio-nombre"));
+        //$(".info-section-element").css("box-shadow", "1px 1px 3px 1px rgba(0,0,0,.3)");
+
+
         
 });
 
@@ -87,14 +90,6 @@ else{
 }
     
 }
-
-
-
-
-
-
-
-
 
 
 
