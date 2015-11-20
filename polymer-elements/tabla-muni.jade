@@ -1,0 +1,165 @@
+link(rel="import", href="../bower_components/polymer/polymer.html")
+link(rel="stylesheet", href="../css/style.css")
+dom-module(id="tabla-muni")
+  template 
+    table
+      tbody
+        tr
+          td(colspan='2', align='center', valign='middle', bgcolor='#D0DAEA')
+        tr
+          td(width='78', bgcolor='#D0DAEA')
+            b Estado
+          td(width='130', bgcolor='#D0DAEA')
+            b
+              a(href='tlaxcala') Tlaxcala
+        tr
+          td(bgcolor='#D0DAEA')  - Cabecera
+
+          td(bgcolor='#D0DAEA') Tlaxcala
+     
+        tr
+          td(bgcolor='#D0DAEA')  - Población   
+          td(bgcolor='#D0DAEA') 83 748 hab.
+        tr
+          td(bgcolor='#D0DAEA')  - Gentilicio
+          td(bgcolor='#D0DAEA') tlaxcalteca
+        tr
+          td(colspan='2', align='center', bgcolor='#D0DAEA')
+            a(href='municipios.php?id_e=29')
+              b Municipios de Tlaxcala
+        tr
+          td(bgcolor='#D0DAEA')
+            b Superficie
+          td(bgcolor='#D0DAEA') 4 061 km
+        tr
+          td(height='1', colspan='2', bgcolor='#FFFF00')
+        tr
+          td(colspan='2', bgcolor='#BECFDE')
+            strong Clima
+        tr
+          td(colspan='2', bgcolor='#BECFDE')
+            strong Atractivos Turísticos en la Zona:
+        tr
+          td(height='37', colspan='2', bgcolor='#D0C59F')
+            a(href='atractivos.php?c=ciudad-de-tlaxcala', title='000023') Ciudad de Tlaxcala
+        tr
+          td(colspan='2', bgcolor='#BECFDE')
+            strong Más Herramientas:
+        tr
+          td(height='37', colspan='2', bgcolor='#D0C59F')
+            div(align='center')
+              b Claves Larga Distancia Nacional
+              a(href='ld.php?edo_id=29&edo_nom=Tlaxcala')
+                b en Estado deTlaxcala  
+        tr
+          td(height='37', colspan='2', bgcolor='#EAE6D5')
+            div(align='center')
+              b
+                a(href='mapas.php?id=29&n=Tlaxcala', target='_self') Mapa del Estado
+        tr
+          td(height='37', colspan='2', bgcolor='#D0C59F')
+            div(align='center')
+              b Carreteras de México
+              a(href='rutas.php', target='_blank') Traza tu ruta
+        tr
+          td(height='37', colspan='2', bgcolor='#EAE6D5')
+            div(align='center')
+              a(href='http://youtube.com/user/guiaturisticamexico', target='_blank')
+                strong YouTube.com/GuiaTuristicaMexico
+        tr
+          td(height='37', colspan='2', bgcolor='#D0C59F')
+            div(align='center')
+              a(href='http://www.myspace.com/guiaturisticamexico')
+                strong MySpace/GuiaTuristicaMexico
+        tr
+          td(height='1', colspan='2', bgcolor='#FFFF00')
+        tr
+          td(colspan='2', bgcolor='#BECFDE')
+            strong Información Valiosa
+        tr
+          td(colspan='2', bgcolor='#D0DAEA')
+            a(href='embajadas_extranjeras.php')
+              b Embajadas Extranjeras
+            a(href='embajadas_de_mexico.php')
+              b Embajadas de México
+        tr
+          td(height='1', colspan='2', bgcolor='#FFFF00')
+        tr
+          td.menor(colspan='2', bgcolor='#BECFDE')
+            strong Servicios Turísticos
+        tr
+          td(colspan='2', bgcolor='#FFBF80')
+            table(width='100%', border='0', cellpadding='2', cellspacing='0')
+              tbody
+                tr
+                  td(width='13')
+                    img(src='../img/bull_cham.png', alt='•', width='13', height='15')
+                  td
+                    span.blanca Hoteles
+                tr
+                  td
+                    img(src='../img/bull_cham.png', alt='•')
+                  td
+                    span.blanca Transporte
+
+                tr
+                  td
+                    img(src='../img/bull_cham.png', alt='•')
+                  td
+                    span.blanca Restaurante
+                tr
+                  td
+                    img(src='../img/bull_cham.png', alt='•')
+                  td
+                    span.blanca Balnearios-SPA
+                tr
+                  td
+                    img(src='../img/bull_cham.png', alt='•')
+                  td
+                    span.blanca Deportes Extremos
+                tr
+                  td
+                    img(src='../img/bull_cham.png', alt='•')
+     
+                  td
+                    span.blanca Compras
+                tr
+                  td
+                    img(src='../img/bull_cham.png', alt='•')
+                  td
+                    a(href='b.php?a=m&c=cultu&e=Tlaxcala&en=Tlaxcala')
+                      b Turismo Cultural (6)
+                tr
+                  td
+                    img(src='../img/bull_cham.png', alt='•')
+                  td
+                    span.blanca Médico y Medicinas
+                tr
+                  td
+                    img(src='../img/bull_cham.png', alt='•')
+                  td
+                    span.blanca Banco, Divisas
+                tr
+                  td
+                    img(src='../img/bull_cham.png', alt='•')
+                  td
+                    span.blanca Escuelas, Idiomas
+
+            a(href='estados.php?id_Estado=29&nombre=Tlaxcala') Regresar a Tlaxcala
+        tr
+          td(height='1', colspan='2', bgcolor='#FFFF00')
+        tr
+        tr
+          td(colspan='2', bgcolor='#D0DAEA')
+        tr
+          td(colspan='2', bgcolor='#D0DAEA') fuentes 
+            a.normal(href='http://www.inegi.gob.mx', title='Instituto Nacional de Estadística Geografía e Informática') INEGI
+              
+            a.normal(href='http://es.wikipedia.org', title='Wikipedia', target='_blank') Wikipedia
+              
+            a.normal(href='http://wwp.GreenwichMeanTime.com', title='Hora Media de Greenwich', target='_blank') GMT
+              
+            a.normal(href='http://www.sct.gob.mx/', target='_blank') SCT
+
+script.
+    Polymer({is: "tabla-muni"});

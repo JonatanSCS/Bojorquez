@@ -2,7 +2,7 @@ link(rel="import", href="../bower_components/polymer/polymer.html")
 link(rel="stylesheet", href="../css/style.css")
 dom-module(id="tabla-estado")
   template
-    table.normal( cellpadding='1', cellspacing='2')
+    table.normal
       tbody
         tr
           td(colspan='2', align='center', valign='middle', bgcolor='#D0DAEA')
@@ -19,7 +19,7 @@ dom-module(id="tabla-estado")
          
         tr
           td(colspan='2', bgcolor='#D0DAEA')
-            table.resto(width='100%', border='0', cellpadding='0', cellspacing='0')
+            table.resto(border='0', cellpadding='0', cellspacing='0')
               tbody
                 tr
                   td
@@ -278,7 +278,7 @@ dom-module(id="tabla-estado")
           td(colspan='2', bgcolor='#93B1EF')
             br
                
-            table(width='100%', border='0', cellpadding='2', cellspacing='0')
+            table(border='0', cellpadding='2', cellspacing='0')
               tbody
                 tr
                   td(class="td-imagen")
@@ -342,7 +342,6 @@ dom-module(id="tabla-estado")
                     img(src='../img/bull_cham.gif', height='20')
                    
                   td
-
                     span.blanca Bancos, Centros Cambiarios, Divisas.
                  
                 tr
@@ -352,15 +351,7 @@ dom-module(id="tabla-estado")
                   td
                     span.blanca Escuelas, Idiomas, Centros de Intercambio.
                
-            form(action='b.php', method='get', name='f')
-              table(width='100%', border='0', cellspacing='0', cellpadding='0')
-                tbody
-                  tr
-                    td(colspan='3')
-                                             
-                  tr
-                    td(align='center') 
-         
+          
         tr
           td(height='2', colspan='2', bgcolor='#B4122D')
 script.

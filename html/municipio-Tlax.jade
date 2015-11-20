@@ -9,6 +9,7 @@ html
 		link(rel="import", href="../polymer-elements/estados.html")
 		link(rel="import", href="../polymer-elements/arte-cultura.html")
 		link(rel="import", href="../polymer-elements/header-min.html")
+		link(rel="import", href="../polymer-elements/tabla-muni.html")
 		script(src="../bower_components/webcomponentsjs/webcomponents-lite.min.js")
 		meta(charset="utf-8")
 		meta(name="viewport", content="width=device-width, initial-scale=1.0")
@@ -22,59 +23,18 @@ html
 			
 
 		section(class="estado-municipio-elemento-section")
-			div(class="estado-municipio-info")
-				img(src="../img/tlaxcala-escudo.jpg", class="imagen-estado")
-				h2(class="titulo-municipio") 
-				a(href="" class="municipios-regreso") Municipios
-				p Acuamanala fue una aldea prehispánica que se desarrolla a lo largo de 800-350 a.c. Debió ser un asentamiento planificado que observó ejes de orientación en su trazo, tener un sistema de control para las entradas y salidas de la población. Contó con plazas rectangulares donde se concentraron las pirámides. Éstas debieron bordear la plaza principal. También debió contar con plataformas bajas donde se ubicaron las residencias importantes. La Colonia: Una vez concluida la conquista, Acuamanala quedó integrada a la Provincia de Tlaxcala, una república de indios gobernada por un Cabildo desde su ciudad capital, lo que le dio derecho a formar parte del cuerpo de electores compuesto por 220 personas. Es probable que Acuamanala haya sido un mayorazgo que en la parte final de la época prehispánica forman parte del señorío de Tepeyanco. La Independencia: Acuamanala observó durante un largo periodo la lucha entre federalistas y centralistas. 
-				img(src="../img/municipio-tlaxcala-1.jpg", class="imagen-municipio-1")
-				p Asistió a la incorporación de Tlaxcala como departamento del estado de México y nuevamente como Territorio de la federación. La Reforma: Acuamanala prestó el concurso de sus hijos en las filas liberales y en defensa de la soberanía, sosteniendo el gobierno de Benito Juárez. El Porfiriato: Vecinos de los diferentes poblados del municipio de Teolocholco, entre ellos el de Acuamanala, solicitaron al gobierno del estado el desconocimiento de la elección de autoridades municipales que se acababan de efectuar por considerarlas fraudulentas, mientras que otro grupo las consideraba como sólidas. Este último grupo estaba vinculado al gobernador y al Congreso local.La Revolución Mexicana: Durante la administración del general Adolfo Bonilla las localidades de Ayometitla, Chimalpa, Quilehtla y el rancho del Espíritu Santo fueron segregados del municipio de Teolocholco, para formar el municipio de Miguel Hidalgo con cabecera en Acuamanala.
-				img(src="../img/municipio-tlaxcala-2.jpg", class="imagen-municipio-2")
-				p Parroquia de San Antonio.- Su construcción data del siglo XVIII, es de estilo barroco y está dedicado a San Antonio de Padua, con portada en argamasa, aún conserva su barda atrial con pináculos y portada de acceso, lápidas en piedra de finales del siglo XIX y principios del siglo XX. La fachada principal es de aplanado blanco, los muros y las cubiertas están hechas en piedra, el ancho de los muros es de 1.20 mts, la forma de la cubierta es abovedada. Rancho Espíritu Santo.- Se construyó durante los siglos XVIII y XIX y actualmente está en ruinas, conservándose sólo algunos muros, donde se aprecia la distribución de espacios; las habitaciones y la troje conforman un patio central. Los materiales de construcción de muros fueron: adobe y piedra de 10x50x80 cm, y un sistema mixto de adobe y piedra con marcos de puertas forjados en ladrillo.
-			section(class="municipio-info-tabla")
-				h2(class="titulo-municipio") Estado de Tlaxcala
-
-				table(width="300px", cellpadding="0", cellspacing="5")
-					tbody
-						tr
-							td Estado
-							td
-								a(href="") Tlaxcala
-						tr
-							td Población
-							td 6 577 hab.
-								
-						tr.tabla-titulo
-							td Municipios de Tlaxcala
-							td 
-						tr
-							td Superficie
-							td 4 440 km
-
-						tr.tabla-titulo
-							td Claves Larga Distancia
-							td
-						tr.tabla-titulo
-							td Mapa de Estado
-							td
-						tr.tabla-titulo
-							td Carreteras
-							td
-						tr.tabla-titulo
-							td Youtube
-							td
-						tr.tabla-titulo
-							td Información valiosa
-							td
-						tr.tabla-titulo
-							td Embajadas Extranjeras
-							td
-						tr.tabla-titulo
-							td Embajadas de México
-							td
-						tr.tabla-titulo
-							td Servicios Turiisticos:
-							td
+			div(class="municipio-informacion")
+				div(class="estado-municipio-info")
+					img(src="../img/tlaxcala-escudo.jpg", class="imagen-estado")
+					h2(class="titulo-municipio") 
+					a(href="" class="municipios-regreso") Municipios
+					p Acuamanala fue una aldea prehispánica que se desarrolla a lo largo de 800-350 a.c. Debió ser un asentamiento planificado que observó ejes de orientación en su trazo, tener un sistema de control para las entradas y salidas de la población. Contó con plazas rectangulares donde se concentraron las pirámides. Éstas debieron bordear la plaza principal. También debió contar con plataformas bajas donde se ubicaron las residencias importantes. La Colonia: Una vez concluida la conquista, Acuamanala quedó integrada a la Provincia de Tlaxcala, una república de indios gobernada por un Cabildo desde su ciudad capital, lo que le dio derecho a formar parte del cuerpo de electores compuesto por 220 personas. Es probable que Acuamanala haya sido un mayorazgo que en la parte final de la época prehispánica forman parte del señorío de Tepeyanco. La Independencia: Acuamanala observó durante un largo periodo la lucha entre federalistas y centralistas. 
+					img(src="../img/municipio-tlaxcala-1.jpg", class="imagen-municipio-1")
+					p Asistió a la incorporación de Tlaxcala como departamento del estado de México y nuevamente como Territorio de la federación. La Reforma: Acuamanala prestó el concurso de sus hijos en las filas liberales y en defensa de la soberanía, sosteniendo el gobierno de Benito Juárez. El Porfiriato: Vecinos de los diferentes poblados del municipio de Teolocholco, entre ellos el de Acuamanala, solicitaron al gobierno del estado el desconocimiento de la elección de autoridades municipales que se acababan de efectuar por considerarlas fraudulentas, mientras que otro grupo las consideraba como sólidas. Este último grupo estaba vinculado al gobernador y al Congreso local.La Revolución Mexicana: Durante la administración del general Adolfo Bonilla las localidades de Ayometitla, Chimalpa, Quilehtla y el rancho del Espíritu Santo fueron segregados del municipio de Teolocholco, para formar el municipio de Miguel Hidalgo con cabecera en Acuamanala.
+					img(src="../img/municipio-tlaxcala-2.jpg", class="imagen-municipio-2")
+					p Parroquia de San Antonio.- Su construcción data del siglo XVIII, es de estilo barroco y está dedicado a San Antonio de Padua, con portada en argamasa, aún conserva su barda atrial con pináculos y portada de acceso, lápidas en piedra de finales del siglo XIX y principios del siglo XX. La fachada principal es de aplanado blanco, los muros y las cubiertas están hechas en piedra, el ancho de los muros es de 1.20 mts, la forma de la cubierta es abovedada. Rancho Espíritu Santo.- Se construyó durante los siglos XVIII y XIX y actualmente está en ruinas, conservándose sólo algunos muros, donde se aprecia la distribución de espacios; las habitaciones y la troje conforman un patio central. Los materiales de construcción de muros fueron: adobe y piedra de 10x50x80 cm, y un sistema mixto de adobe y piedra con marcos de puertas forjados en ladrillo.
+				section(class="municipio-info-tabla")
+					tabla-muni
 				
 
 
