@@ -17,9 +17,8 @@ function renderGrid(){
 				blocks[i].style.top = newtop+"px";
 				 if(cuenta <= newtop){
 		    	cuenta = newtop;
-		    }
-				
-
+		    }		
+		    
 			}
 			newleft = (blocks[i-1].offsetLeft + blocks[i-1].offsetWidth) + pad;
 			blocks[i].style.left = newleft+"px";	
